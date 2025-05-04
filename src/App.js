@@ -11,7 +11,7 @@ function App() {
   //const [darkTheme, setDarkTheme] = useState(false);
 
   return (
-    <div className='flex justify-between flex-col w-screen'>
+    <div className='flex min-h-screen justify-between flex-col w-screen'>
       <Navbar />
       <Routes>
         <Route exact path='/home' element={<Result />} />
@@ -21,7 +21,6 @@ function App() {
         <Route exact path='/news' element={<Result />} />
         <Route exact path='/videos' element={<Result />} />
       </Routes>
-      
       <Footer />
     </div>
   );
